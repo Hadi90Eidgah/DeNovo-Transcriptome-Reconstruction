@@ -23,10 +23,10 @@
     script:
     """
     samtools view  -H ${pass} >> ${sample}_paired.sam;
-    samtools view -f99 ${pass}  >> ${sample}_paired.sam ;
-    samtools view -f147 ${pass} >> ${sample}_paired.sam;
-    samtools view -f83 ${pass} >> ${sample}_paired.sam;
-    samtools view -f163 ${pass} >> ${sample}_paired.sam;
+    samtools view  ${pass}  >> ${sample}_paired.sam ;
+    samtools view -47 ${pass} >> ${sample}_paired.sam;
+    samtools view 83 ${pass} >> ${sample}_paired.sam;
+    samtools view -f13 ${pass} >> ${sample}_paired.sam;
     samtools sort -O bam -o ${sample}_properlypaired_sorted.bam  ${sample}_paired.sam;
     
     """

@@ -19,7 +19,7 @@ process MERGE_STRINGTIE {
         -G $gtf \\
         -o stringtie.merged.gtf \\
         -i \\
-        -l TREG_CHR \\
+         R \\
         -f 0 \\
     """
     else
@@ -28,7 +28,7 @@ process MERGE_STRINGTIE {
         --merge $stringtie_gtf \\
         -o stringtie.merged.gtf \\
         -i \\
-        -l TREG_CHR \\
+        -R \\
         -f 0 \\
     """
 }

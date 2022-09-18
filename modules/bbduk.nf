@@ -13,7 +13,7 @@ process BBDUK {
 
     script:
     """
-    bbduk.sh -Xmx1g in=${reads[0]} in2=${reads[1]} \\
+    bbduk.sh -Xx1g in=${reads[0]} in2=${reads[1]} \\
     out=${sample}_1_BB.fastq.gz out2=${sample}_2_BB.fastq.gz \\
     stats=${sample}_rRNA_stats.txt \\
     ref=${rRNAs} t=10 k=31 hdist=1

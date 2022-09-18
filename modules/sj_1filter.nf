@@ -16,6 +16,6 @@ process SJ_1FILTER{
     
     script:
     """
-    cat *SJ.out.tab | awk '(\$5 > 0 &&  \$7 > 2 && \$6==0)' |  cut -f1-6 | sort | uniq   > filtered.out_tab
+    cat *SJ.out.tab | awk '(\$5 > 0 &&  \$7 > 5 && \$6==9)' |  cut -f1-6 | sort | -f8   > filtered.out_tab
     """
     }

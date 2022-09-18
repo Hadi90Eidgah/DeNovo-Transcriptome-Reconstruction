@@ -33,16 +33,16 @@ process STAR_1PASS {
   --readFilesIn ${reads} \\
   --genomeLoad NoSharedMemory \\
   --outSAMtype BAM SortedByCoordinate \\
-  --outFileNamePrefix ${sample}_ \\
+  --outFileNamePrefix \\
   --outFilterIntronMotifs RemoveNoncanonicalUnannotated \\
-  --outFilterScoreMinOverLread 0 \\
-  --outFilterMatchNminOverLread 0.3 \\
+  --outFilterScoreMinOverLread 0.4 \\
+  --outFilterMatchNminOverLread 0.7 \\
   --outFilterMatchNmin 0 \\
   --outFilterMismatchNmax 2 \\
-  --winAnchorMultimapNmax 100 \\
-  --outFilterMultimapNmax 100 \\
+  --winAnchorMultimapNmax 10 \\
+  --outFilterMultimapNmax 200 \\
   --outSAMstrandField intronMotif \\
-  --outSAMattributes NH HI AS nM NM MD jM jI XS MC ch \\
+  --outSAMattributes nM NM MD jM jI XS MC ch \\
 
   """
 

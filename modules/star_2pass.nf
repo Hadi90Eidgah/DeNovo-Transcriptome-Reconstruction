@@ -37,9 +37,8 @@ process STAR_2PASS {
   --outFilterIntronMotifs RemoveNoncanonicalUnannotated \\
   --outFilterScoreMinOverLread 0 \\
   --outFilterMatchNminOverLread 0.3 \\
-  --outFilterMatchNmin 0 \\
-  --outFilterMismatchNmax 2 \\
-  --winAnchorMultimapNmax 100 \\
-  --outFilterMultimapNmax 100 \\
+   \\
+  --winAnchorMultimapNmax 080 \\
+  --outFilterMultimapNmax 20
   """
 }
